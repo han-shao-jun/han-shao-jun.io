@@ -476,6 +476,33 @@
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
+
+
+<h1 id="一、git设置github账号信息："><a href="#一、git设置github账号信息：" class="headerlink" title="一、git设置github账号信息："></a>一、git设置github账号信息：</h1><h2 id="1-安装配置设置工具config"><a href="#1-安装配置设置工具config" class="headerlink" title="1.安装配置设置工具config"></a>1.安装配置设置工具config</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install config -g \<span class="comment">#全局安装</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-上传用户信息"><a href="#2-上传用户信息" class="headerlink" title="2.上传用户信息"></a>2.上传用户信息</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">&quot;你的GitHub登陆名&quot;</span> <span class="comment">#账号名字</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.email <span class="string">&quot;你的GitHub注册邮箱&quot;</span><span class="comment">#账号邮箱</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="二、git代理"><a href="#二、git代理" class="headerlink" title="二、git代理"></a>二、git代理</h1><h2 id="1-安装配置设置工具config-1"><a href="#1-安装配置设置工具config-1" class="headerlink" title="1.安装配置设置工具config"></a>1.安装配置设置工具config</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install config -g \<span class="comment">#全局安装</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-设置代理"><a href="#2-设置代理" class="headerlink" title="2.设置代理"></a>2.设置代理</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global http.proxy <span class="string">&#x27;socks5:#电脑的代理器</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global htt	ps.proxy <span class="string">&#x27;socks5:#电脑的代理服务器’</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-查看代理服务器"><a href="#3-查看代理服务器" class="headerlink" title="3.查看代理服务器"></a>3.查看代理服务器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global --get http.proxy \<span class="comment">#输出代理服务器</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global --get https.proxy \<span class="comment">#输出代理服务器</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4-取消代理"><a href="#4-取消代理" class="headerlink" title="4.取消代理"></a>4.取消代理</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global --<span class="built_in">unset</span> http.proxy</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global --<span class="built_in">unset</span> https.proxy</span><br></pre></td></tr></table></figure>
+
+<h1 id="三、npm-相关安装"><a href="#三、npm-相关安装" class="headerlink" title="三、npm 相关安装"></a>三、npm 相关安装</h1><h2 id="1-全局安装"><a href="#1-全局安装" class="headerlink" title="1.全局安装"></a>1.全局安装</h2><p>​        会将被安装的应用代码模块安装到全局环境（NODE_PATH系统的环境变量目录下），适用于跨文件夹项目使用应用工具，同一部电脑的任何目录都可以使用</p>
+<h2 id="2-局部安装"><a href="#2-局部安装" class="headerlink" title="2.局部安装"></a>2.局部安装</h2><p>​        会将被安装的应用代码模块安装当前的文件（即执行git命令的目录下），只能在当前的目录下应用被安装的应用模块</p>
+<blockquote>
+<p>  <a target="_blank" rel="noopener" href="https://github.com/han-shao-jun/han-shao-jun.io.git">https://github.com/han-shao-jun/han-shao-jun.io.git</a></p>
+</blockquote>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
                 
